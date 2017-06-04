@@ -1,0 +1,70 @@
+body {
+	background: lightblue;
+}
+
+h1 {color:red;}
+
+h2 {
+	font-family: "allegro", 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: lightgreen;
+}
+
+h4 { color:red; 
+	 font-family: "allegro", 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+
+.jumbotron {
+	margin-top:20px;
+	margin-bottom: 200px;
+	text-align: center;
+	background-color:blue;
+	color: sandybrown;
+}
+
+#click {
+	color: black;
+	font-weight: bold;
+}
+
+
+
+#left {
+	    margin-left: -150px;
+    clear: both;
+    margin-top: 15px;
+    float: left;
+}
+
+#burger {
+	color:green;
+	margin-bottom: 15px;
+	font-weight:bold;
+	background-color:pink;
+	font-size: 18px;
+}
+
+#right {
+	    margin-top: -340px;
+    float: right;
+
+}
+
+
+#middle {   
+   margin-left: 75px; 
+    margin-top: -50px;}
+
+#form {
+	margin-bottom:10px;
+}
+
+#text {
+	margin-bottom: 10px;
+}
+
+#byline {
+	color:red;
+	font-weight:bold;
+}

@@ -1,1 +1,5 @@
-# sequelizedBurger
+# burger
+Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page. Your app will store every burger in a database, whether devoured or not.
+
+
+I deployed to heroku, only when I hit the devour button I got an error. So i decided to delete the app and try to redeploy following all the steps, thinking I messed something up when I created the schema for the DB. But when I try to create a new link to my app, my git bash says there is no link found for the heroku app, because it's been deleted and it doesn't recognize the new one. Since this is an issue that took forever to fix last time. Ryo already helped me with one thing for like thirty minutes just now, so I don't feel like bothering her again. 

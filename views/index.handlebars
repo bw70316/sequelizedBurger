@@ -1,0 +1,68 @@
+<div class= "container">
+  <div class="jumbotron">
+      <h4>J. Wellington Wimpy Presents....
+      <h1>Whimpy's Burgers</h1>
+      <h2>"I'll glad pay you Tuesday for a hamburger today"</h2>
+       <img src="/assets/img/wimpy.png">
+  </div>
+
+<!--this code goes through an displays burgers that aren't devoured-->
+ <div class="row">
+  <div class="col-lg-4" id="left">
+    <ul>
+        {{#each burgers}}
+        {{#unless this.devoured}}
+      <li class ="list-group-item" id="burger">
+         {{this.burger_name}}
+      </li><br>
+      <!--unless devoured is true, it will display the burgers-->
+
+    <form action="/{{this.id}}?_method=PUT" method="POST" id="form">
+      <input type="hidden" name="devoured" value="false">
+      <button type="submit" id="click">DEVOUR IT</button>
+    </form>
+      {{/unless}}
+      {{/each}}
+   </ul>
+  </div>
+
+  
+  <div class="col-lg-4" id="middle">
+<h2 id="byline">Add a Burger to the Menu (No Spinach!!)</h2>
+<form class="create-update-form" action="/" method="POST">
+
+  <textarea class="form-control" name="burger_name" rows="6" cols="50" id="text" >
+
+  </textarea>
+
+  <button type="submit" id="click">Add Burger</button>
+</form>
+</div>
+</div>
+<!--button to add a burger-->
+
+ 
+   <div class="col-lg-4" id="right">
+    <ul>
+       {{#each burgers}}
+       {{#if this.devoured}}
+         <li class ="list-group-item" id="burger">
+          <p class="eaten">{{this.burger_name}} </p>
+         </li><br>
+
+        <form action="/{{this.id}}?_method=PUT" method="POST" id="devoured">
+          <input id="devoured" type="hidden" name="devoured" value="false">
+        </form>
+  <!--if the burger is devoured, then it will appear on the right side-->
+      {{/if}}
+      {{/each}}
+    </ul>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+
